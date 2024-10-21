@@ -21,5 +21,10 @@ Commands to help gain situational awareness
     /etc/groups - all groups
 
      use id command to get uid 
+**Linux Boot Process**
+commands
+lsblk - lists block devices currently in use by linux
+
+
 
   
