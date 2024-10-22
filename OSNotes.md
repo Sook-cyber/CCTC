@@ -25,6 +25,29 @@ Commands to help gain situational awareness
 commands
 lsblk - lists block devices currently in use by linux
 
+Get-Process (not sorted)
+Tasklist
+Get-Process | Sort -property ID | more (sorted by PID)
+tasklist /m | more (display associated .dll's with services running)
+
+(view services in command prompt)
+sc query
+net start
+(view services in GUI)
+services.msc
+PsService
+
+(viewing scheduled tasks)
+Get-ScheduledTask | select * | select -First 1 (powershell, first task)
+schtasks /query /tn "*name*" /v /fo list
+
+Get-NetTCPConnection -state Established (show all connections in Established state)
+netstat -anob | more (command line)
+
+(viewing net connections in the GUI)
+TCPView
+
+
 
 
   
